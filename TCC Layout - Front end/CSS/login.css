@@ -1,0 +1,126 @@
+/*-------------------------------- login.html -------------------------------*/
+
+.containerLogin {
+    display: grid;
+    grid-template-areas: 
+        "headerLogin headerLogin headerLogin"
+        "sidebarLogo loginTela loginTela"
+        "footer footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 60px auto 50px;
+    gap: 7px;
+    height: 100vh;
+}
+/*Cabeçalho da pagina */
+.headerLogin {
+    display: flex;
+    grid-area: headerLogin;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+/*A parte que irá acomodar uma arte*/
+.sidebarLogo {
+    grid-area: sidebarLogo;
+    background-color: #f0f0f0;
+}
+/*A parte que irá acomodar o Login de usuário*/
+.loginTela {
+    grid-area: loginTela;
+    background-color: #ccc;
+}
+.footer {
+    grid-area: footer;
+
+}
+
+/*Caixa de Login*/
+.formulario_log{
+    display: flexbox;
+    border: solid 1px black;
+    padding: 15px;
+    width: 240px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 3px 3px black;
+}
+/*Media Queries*/
+
+/*Resposividade para celular entre 0px e 500px tera essa resposividade*/
+@media (max-width: 500px) {
+/*Caso a pagina seja reduzida a 668px os seguintes comandos serão aplicados nas classes.*/
+body{
+background-color: blue;
+}
+}
+/*Responsividade para tablet de tela com a largura de 668px*/
+@media (min-width: 501px) {
+/*Caso a pagina seja reduzida a 668px os seguintes comandos serão aplicados nas classes.*/
+body{
+background-color: red;
+}
+}
+
+/*Responsividade para os descktops a a partir de 1024px*/
+@media (min-width: 1024px) {
+/*Caso a pagina esteja abaixo de 1024px será aplicado a seguintes condições*/
+body{
+background-color: greenyellow;
+}
+}
+
+/*Cabeçalho da pagina */
+.headerLogin {
+    display: flex;
+    grid-area: headerLogin;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+/*A parte que irá acomodar uma arte*/
+.sidebarLogo {
+    grid-area: sidebarLogo;
+    background-color: #f0f0f0;
+}
+/*A parte que irá acomodar o Login de usuário*/
+.loginTela {
+    grid-area: loginTela;
+    background-color: #ccc;
+}
+.footer {
+    grid-area: footer;
+
+}
+/*Caixa de Login*/
+.formulario_log{
+    display: flexbox;
+    border: solid 1px black;
+    padding: 15px;
+    width: 240px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 3px 3px black;
+}
+/*Media Queries*/
+
+/*Resposividade para celular entre 0px e 500px tera essa resposividade*/
+@media (max-width: 500px) {
+/*Caso a pagina seja reduzida a 668px os seguintes comandos serão aplicados nas classes.*/
+body{
+background-color: blue;
+}
+}
+/*Responsividade para tablet de tela com a largura de 668px*/
+@media (min-width: 501px) {
+/*Caso a pagina seja reduzida a 668px os seguintes comandos serão aplicados nas classes.*/
+body{
+background-color: red;
+}
+}
+
+/*Responsividade para os descktops a a partir de 1024px*/
+@media (min-width: 1024px) {
+/*Caso a pagina esteja abaixo de 1024px será aplicado a seguintes condições*/
+body{
+background-color: greenyellow;
+}
+}
+
