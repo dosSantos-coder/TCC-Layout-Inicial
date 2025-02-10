@@ -1,0 +1,111 @@
+/*-------------------------------- medico.html -------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Conteudo grid da pagina*/
+.container {
+    /*Declaração do display*/
+    display: grid;
+    /*Distribuição das areas do grid*/
+    grid-template-areas: 
+        "header header header"
+        "sidebarA main sidebarB"
+        "footer footer footer";
+    /*Fração das areas (distribuição de espaço dentro de cada div)*/
+    grid-template-columns: 2fr 4fr 2fr;
+    /*Espaço em pixels que deve ter dentro das divs*/
+    grid-template-rows: 60px auto 50px;
+    /*Espaço entre as divs*/
+    gap: 7px;
+    /*Tamanho*/
+    height: 100vh;
+}
+/*Cabeçalho da pagina */
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+/*Lado esquerdo da tela*/
+.sidebarA {
+    grid-area: sidebarA;
+    background-color: #f0f0f0;
+}
+/*Lado direito da tela*/
+.sidebarB {
+    grid-area: sidebarB;
+    background-color: #f0f0f0;
+}
+/*Lado central da tela que conterá o conteúdo principal da pagina*/
+.main {
+    grid-area: main;
+    background-color: #ccc;
+}
+.footer {
+    grid-area: footer;
+
+}
+#pacientes{
+    display: flex;
+    justify-content:flex-start;
+}
+/*Media Queries*/
+
+/*Resposividade para celular entre 0px e 500px tera essa resposividade*/
+@media (max-width: 500px) {
+/*Caso a pagina seja reduzida a 668px os seguintes comandos serão aplicados nas classes.*/
+body{
+background-color: blue;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows:50px auto 10px;
+    gap: 0px;
+    height: 100vh;
+}
+/*Cabeçalho da pagina */
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+.main {
+    grid-area: main;
+    background-color: #ccc;
+}
+.footer {
+    grid-area: footer;
+
+}
+}
+.cadastro1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: main;
+    background-color: #ccc;
+}
+/*Responsividade para tablet de tela com a largura de 668px*/
+@media (min-width: 501px) {
+/*Caso a pagina seja reduzida a 668px os seguintes comandos serão aplicados nas classes.*/
+body{
+background-color: red;
+}
+}
+
+/*Responsividade para os descktops a a partir de 1024px*/
+@media (min-width: 1024px) {
+/*Caso a pagina esteja abaixo de 1024px será aplicado a seguintes condições*/
+body{
+background-color: greenyellow;
+}
+}
